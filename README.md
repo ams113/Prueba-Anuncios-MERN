@@ -27,7 +27,7 @@ El anuncio tiene que tener un valor de 0 a 100 pts.
   - Excepcional <span style="color:green">**5 pts**</span>
   - Ocasión <span style="color:green">**5 pts**</span>
   
-**Reglas para calificar anuncio completo completo**
+**Reglas para calificar anuncio completo**
 
 - Tipo vehículo <span style="color:green">**40 pts**</span> si tiene:
  - KM
