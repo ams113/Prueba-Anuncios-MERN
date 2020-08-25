@@ -5,20 +5,20 @@ El anuncio tiene que tener un valor de 0 a 100.
 
 **Reglas de valoración generales**
 
-- No foto <span style="color:red">some ** -10 ** text</span>
-- Foto HD <span style="color:green">some ** 20 ** text</span>
-- Foto SD <span style="color:green">some ** 10 ** text</span>
-- Descripción <span style="color:green">some ** 5 ** text</span>
+- No foto <span style="color:red">**-10**</span>
+- Foto HD <span style="color:green">**20**</span>
+- Foto SD <span style="color:green">**10**</span>
+- Descripción <span style="color:green">**5**</span>
 
 **Reglas de valoración para la descripción del tipo** +Inmueble*
 
 - Piso
   - Por número de palabras:
-    =< 20 <span style="color:green">**10**</span>
-    =< 50 <span style="color:green">**30**</span>
+   -Si es =< 20 <span style="color:green">**10**</span>
+   -Si es =< 50 <span style="color:green">**30**</span>
 - Chalet
   - Por número de palabras:
-    =< 50 <span style="color:green">**50** text</span>
+   -Si es =< 50 <span style="color:green">**50** text</span>
 - Tags valorados en la descripción:
   - Luminoso <span style="color:green">**5**</span>
   - Cuidado <span style="color:green">**5**</span>
