@@ -43,5 +43,22 @@ El anuncio tiene que tener un valor de 0 a 100.
  
  **Scroll infinito** 
   
+### Observaciones de los requisitos.
+- Según los toppings de valoración un piso puede llegar a tener 120 puntos de valoración.
+- El algoritmo de valoración se dará mayor relevancia a los del tipo inmueble.
+
+## Diseño de interfaces 
+##### Fase 0
+La aplicación constará de dos interfaces y un modal
+- Una interfaz principal con un Muro de anuncios 
+- Una interfaz secundaria con el detalle del anuncio seleccionado.
+- Un modal para añadir un anuncio al muro
+##### Fase 1
+- Interfaz del login
+- Interfaz de regisro
+##### Fase 2
+- Interfaz gestión de anuncios.
+
+
     
 
