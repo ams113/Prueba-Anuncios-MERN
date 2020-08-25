@@ -14,11 +14,11 @@ El anuncio tiene que tener un valor de 0 a 100.
 
 - Piso
   - Por número de palabras:
-   -Si es =< 20 <span style="color:green">**10**</span>
-   -Si es =< 50 <span style="color:green">**30**</span>
+   - Si es =< 20 <span style="color:green">**10**</span>
+   - Si es =< 50 <span style="color:green">**30**</span>
 - Chalet
   - Por número de palabras:
-   -Si es =< 50 <span style="color:green">**50** text</span>
+   - Si es =< 50 <span style="color:green">**50** text</span>
 - Tags valorados en la descripción:
   - Luminoso <span style="color:green">**5**</span>
   - Cuidado <span style="color:green">**5**</span>
@@ -40,6 +40,7 @@ El anuncio tiene que tener un valor de 0 a 100.
  - Metros cuadrados
  
  **Los anuncios serán irrelevantes con una valoración menor de 40**
+ 
  **Scroll infinito** 
   
     
