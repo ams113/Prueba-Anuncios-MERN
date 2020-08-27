@@ -79,7 +79,7 @@ La aplicación constará de dos interfaces y un modal
 
 ## Boceto del stack
 
-![boceto]("https://i.ibb.co/7y8QrJ9/esquema-visual.png)
+![boceto](https://i.ibb.co/7y8QrJ9/esquema-visual.png)
 
 ## Pruebas unitarias
 - Realizar pruebas unitarias a los componetes del front con JEST y Enzyme
