@@ -77,12 +77,17 @@ La aplicación constará de dos interfaces y un modal
 - Implementar GraphQL
 - Implementar autentificación a la api con JWT
 
+## Boceto del stack
+
+![boceto](https://ibb.co/ggHdtMn)
+
 ## Pruebas unitarias
 - Realizar pruebas unitarias a los componetes del front con JEST y Enzyme
 - Realizar pruebas a la api de acceso con la herramienta postman.
 
 ## Trabajo futuro
 Como trabajo futuro en se podría implementar:
+- barra de búesqueda de anuncios
 - Diseño responsive para el móvil o crear una PWA
 - Utilizar Mongo Compass persistencia en la nube en lugar de una persistencia local.
 - CRUD que permita gestionar los anuncios.
