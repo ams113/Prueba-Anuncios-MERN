@@ -1,6 +1,6 @@
 # Prueba-Anuncios-MERN
 ### SPA responsive encargada de mostrar los anuncios más relevantes utilizando el stack MERN
-**FrontEnd:** [https://github.com/ams113/frontAnuncios](https://github.com/ams113/frontAnuncios).
+**FrontEnd:** [Front-Anuncios](https://github.com/ams113/frontAnuncios).
 
 **BackEnd:** [Back-Anuncios](https://github.com/ams113/Back-Anuncios).
 
