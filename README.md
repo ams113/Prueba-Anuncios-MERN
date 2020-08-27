@@ -63,7 +63,7 @@ La aplicación constará de dos interfaces y un modal
 - Interfaz del login
 - Interfaz de regisro
 
-## Diseño de de la estructura backend
+## Diseño de la estructura backend
 - Conexión con la base de datos mediante *Mongoose*
 - Definir el modelo de esquema para la colección de Mongo Anuncio.
 - Definir las rutas para acceso la api con *express* [GET,POST] http://localhost:4000/api/ads
