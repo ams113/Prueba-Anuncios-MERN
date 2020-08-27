@@ -83,7 +83,7 @@ Como trabajo futuro en se podría implementar:
 - Protección de las rutas
 - Implementar Https
 - Gestión del perfil de usuario
-- Sistema de logs para la infraestructura
+- Sistema de logs para la app
 - Dokerizar el proyecto.
 
 
