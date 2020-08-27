@@ -4,6 +4,8 @@
 
 **BackEnd:** [Back-Anuncios](https://github.com/ams113/Back-Anuncios).
 
+**Persistencia de datos** [MongoDB en local](https://docs.mongodb.com/manual/administration/install-community/).
+
 ## Requisitos funcionales.
 El anuncio tiene que tener un valor de 0 a 100 pts.
 
