@@ -1,5 +1,15 @@
 # Prueba-Anuncios-MERN
-### SPA responsive encargada de monstrar los anuncios más relevantes utilizando el stack MERN
+### SPA responsive encargada de mostrar los anuncios más relevantes utilizando el stack MERN
+**FrontEnd:** [Front-Anuncios](https://github.com/ams113/frontAnuncios).
+
+**BackEnd:** [Back-Anuncios](https://github.com/ams113/Back-Anuncios).
+
+**Persistencia de datos** [MongoDB en local](https://docs.mongodb.com/manual/administration/install-community/).
+
+**Datos de ejemplo** [Datos anuncio](https://github.com/ams113/Back-Anuncios/tree/master/Data).
+
+
+
 ## Requisitos funcionales.
 El anuncio tiene que tener un valor de 0 a 100 pts.
 
@@ -47,17 +57,47 @@ El anuncio tiene que tener un valor de 0 a 100 pts.
 - Según los toppings de valoración un piso puede llegar a tener 120 puntos de valoración.
 - El algoritmo de valoración se dará mayor relevancia a los del tipo inmueble.
 
-## Diseño de interfaces 
-#### Fase 0
+## Diseño de screens para el frontend
+#### Fase 1
 La aplicación constará de dos interfaces y un modal
 - Una interfaz principal con un Muro de anuncios 
+ - Incluir Lazyload para la carga de los anuncios.
 - Una interfaz secundaria con el detalle del anuncio seleccionado.
 - Un modal para añadir un anuncio al muro
+
 #### Fase 1
 - Interfaz del login
 - Interfaz de regisro
-#### Fase 2
-- Interfaz gestión de anuncios.
+
+## Diseño de la estructura backend
+- Conexión con la base de datos mediante *Mongoose*
+- Definir el modelo de esquema para la colección de Mongo Anuncio.
+- Definir las rutas para acceso la api con *express* [GET,POST] http://localhost:4000/api/ads
+- Implemetar la función de puntuación del anuncio.
+- Implementar GraphQL
+- Implementar autentificación a la api con JWT
+
+## Boceto del stack
+
+![boceto]("https://i.ibb.co/7y8QrJ9/esquema-visual.png)
+
+## Pruebas unitarias
+- Realizar pruebas unitarias a los componetes del front con JEST y Enzyme
+- Realizar pruebas a la api de acceso con la herramienta postman.
+
+## Trabajo futuro
+Como trabajo futuro en se podría implementar:
+- barra de búesqueda de anuncios
+- Diseño responsive para el móvil o crear una PWA
+- Utilizar Mongo Compass persistencia en la nube en lugar de una persistencia local.
+- CRUD que permita gestionar los anuncios.
+- Autenticación para los usuarios a través de tokens de acceso (JWT) e implementar google SingIn
+- Protección de las rutas
+- Implementar Https
+- Gestión del perfil de usuario
+- Sistema de logs para la app
+- Dokerizar el proyecto.
+
 
 
     
