@@ -77,6 +77,7 @@ La aplicación constará de dos interfaces y un modal
 
 ## Trabajo futuro
 Como trabajo futuro en se podría implementar:
+- Utilizar Mongo Compass persistencia en la nube en lugar de una persistencia local.
 - CRUD que permita gestionar los anuncios.
 - Autenticación para los usuarios a través de tokens de acceso (JWT) e implementar google SingIn
 - Protección de las rutas
