@@ -78,7 +78,7 @@ La aplicación constará de dos interfaces y un modal
 - Implementar autentificación a la api con JWT
 
 ## Boceto del stack
-
+![boceto](esquema.png)
 ![boceto](https://i.ibb.co/7y8QrJ9/esquema-visual.png)
 
 ## Pruebas unitarias
