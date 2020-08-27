@@ -1,6 +1,7 @@
 # Prueba-Anuncios-MERN
 ### SPA responsive encargada de monstrar los anuncios más relevantes utilizando el stack MERN
 **FrontEnd:** [https://github.com/ams113/frontAnuncios](https://github.com/ams113/frontAnuncios).
+
 **BackEnd:**
 
 ## Requisitos funcionales.
@@ -66,6 +67,7 @@ La aplicación constará de dos interfaces y un modal
 - Conexión con la base de datos mediante *Mongoose*
 - Definir el modelo de esquema para la colección de Mongo Anuncio.
 - Definir las rutas para acceso la api con *express* [GET,POST] http://localhost:4000/api/ads
+- Implemetar la función de puntuación del anuncio.
 - Implementar GraphQL
 - Implementar autentificación a la api con JWT
 
@@ -75,11 +77,12 @@ La aplicación constará de dos interfaces y un modal
 
 ## Trabajo futuro
 Como trabajo futuro en se podría implementar:
-- CRUD que permita gestionear los anincios.
-- Autenticación para los usuarios a traves de tokens de acceso (JWT) e implementar google SingIn
+- CRUD que permita gestionar los anuncios.
+- Autenticación para los usuarios a través de tokens de acceso (JWT) e implementar google SingIn
 - Protección de las rutas
 - Implementar Https
 - Gestión del perfil de usuario
+- Sistema de logs para la infraestructura
 - Dokerizar el proyecto.
 
 
