@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/anuncios-app/node_modules
+/anuncios-app/.pnp
+/anuncios-app/.pnp.js
+
+# testing
+/anuncios-app//coverage
+
+# production
+/anuncios-app//build
+
+# misc
+/anuncios-app/.DS_Store
+/anuncios-app/.env.local
+/anuncios-app/.env.development.local
+/anuncios-app/.env.test.local
+/anuncios-app/.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

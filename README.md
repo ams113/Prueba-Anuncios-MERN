@@ -4,7 +4,7 @@
 
 **BackEnd:** [Back-Anuncios](https://github.com/ams113/Back-Anuncios).
 
-**Persistencia de datos** [MongoDB en local](https://docs.mongodb.com/manual/administration/install-community/).
+**Persistencia de datos** [MongoDB en la nube](https://www.mongodb.com/products/compass).
 
 **Datos de ejemplo** [Datos anuncio](https://github.com/ams113/Back-Anuncios/tree/master/Data).
 
@@ -83,7 +83,7 @@ La aplicación constará de dos interfaces y un modal
 
 ## Pruebas unitarias
 - Realizar pruebas unitarias a los componetes del front con JEST y Enzyme
-- Realizar pruebas a la api de acceso con la herramienta postman.
+- Realizar pruebas a la api de acceso con la herramienta postman graphQL beta.
 
 ## Trabajo futuro
 Como trabajo futuro en se podría implementar:
