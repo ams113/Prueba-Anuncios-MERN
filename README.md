@@ -123,6 +123,7 @@ Como trabajo futuro en se podría implementar:
 - Despliegue total en la nube
 - Terminar desplegar kafka 
 - Sistema de seguimiento  para los anuncios y alerta mediante push.
+- Aprovechando kafka un sistema de mailing de infomación sobre anncios.
 
 
 
