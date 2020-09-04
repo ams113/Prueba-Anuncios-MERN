@@ -72,21 +72,40 @@ La aplicación constará de dos interfaces y un modal
 ## Diseño de la estructura backend
 - Conexión con la base de datos mediante *Mongoose*
 - Definir el modelo de esquema para la colección de Mongo Anuncio.
-- Definir las rutas para acceso la api con *express* [GET,POST] http://localhost:4000/api/ads
+- Definir las rutas para acceso la api http://localhost:4000/graphql
 - Implemetar la función de puntuación del anuncio.
 - Implementar GraphQL
 - Implementar autentificación a la api con JWT
 
-## Boceto del stack
+## Boceto de la interfaz de usuario
 
 
 ![interfaces](https://github.com/ams113/Prueba-Anuncios-MERN/blob/master/interfaces.PNG?raw=true)
+
+## Arquitectura del proyecto
+
+Se trata de diseñar una arquitectura microservicos lo más desacoplada posible, y preparado para trabajar en la nube. Que consta de un Frontend la parte de la interfaz de usuario o cliente, el backend donde se accede a la información y se trata y un servicio de alojamiento en la nube. Para el almacenamiento de las imagenes se utiliza AWS y para lo demás se utiliza Mongo Compass. La comunicación con la API del backend se realiza con el cliente de Apollo que se ha integrado en nuestro frontEnd.
+
+Para el FrontEnd desarrollado con react.js tiene una interfaz pública donde te puedes registrar o loguear con tu usuario de manera segura ya que la contraseña se guarda
+cifrada. La autenticación y autorización se maneja a través de la tecnologia JWT. En la parte privada podrás consultar los anuncios más relevantes según la calidad de la información de estos o subir un anuncio.
 
 ![register](https://github.com/ams113/Prueba-Anuncios-MERN/blob/master/register.PNG?raw=true)
 
 ![login](https://github.com/ams113/Prueba-Anuncios-MERN/blob/master/login.PNG?raw=true)
 
+Para el backend se utliza la tecnología de Node.js junto a la plataforma ![Apollo](https://www.apollographql.com/) que integra la interfaz de GraphQL, con esta tecnología nos permite tener una API de acceso a la informacion mantenible y versátil según la información requeriada por los distintos dispositivos o clientes, ya que centra el acceso a la información en un único endpoint. Además, GraphQL al tener bien definida y estructurada la información con la que trabaja, facilita la autodocumentación de la API.
+
+Cuando un cliente quiere se registra en nuestra APP el backend almacena la información la cifra y la almacena por un canal seguro en la nube. El Servidor valida a un usuario con un token de acceso temporal. Que le permite durante 24 horas poder interactuar con la APP después tiene que volver a loguear. En el caso caso de tener distintos perfiles de usuario gracias al token se pordía hablitiar o no determinados servicios.
+
+Publicar un anuncio se realiza por partes, la información del anuncio a una petición a través de graph y el backend guarda esa información en la nube con el driver de mongoose, pero las imágenes se almamacen en un servicio de amazon en concreto el Bucket S3 AWS un servicio muy ecónomico y elástico. Después, el servico asíncrono de **puntuación del anuncio analiza el anuncio y le da una puntuación de calidad** actualizando la información la puntuación del anuncio aposteriori.
+
 ![anuncio](https://github.com/ams113/Prueba-Anuncios-MERN/blob/master/anuncio.PNG?raw=true)
+
+El servicio de puntuación de anuncio como otros servicios podrían ser independinte, se podria introducir un sistema de colas mediande Apache KAFKA de manera que todos los servicios estarían dados de alta en la plataforma y mediante un patrón publicador/subcritor dandole a unestro proyecto un enfoque de mayor consistencia a una arquitectura de micro servicios, temporalidad y escalabilidad. Esta tencnología se comunica mediate web sockets para entederse con "mensajes" de subscripción a los topic o entrega de información.
+
+Para el desplieque y la contrucción de las partes se utiliza docker, es una forma de virtualización ligera que nos libera de la dependecia con los sistemas operativos donde se despliega el proyecto. Una vez, selecionado el lugar de desplieque mediante docker-compose agrupamos todo el despliegue de nuestro proyecto y la configuación de los accesos y variables de entorno. En el caso de kafka necesitaremos levantar un docker con el servidor zookeeper con el que poder trabajar.
+
+Una arquitectura tolerante a fallos, con Docker nos permite que si un servico se cae automaticamente lo levanta, o levantar una copia de él en caso de sobrecarga con esto ganamos mayor disponibilidad de nuestros servicios, también mongo permite repartir la infomción en distintos clusters en caso que de falle uno otro se hace cargo y la infomación siempre esta accesible.
 
 ## Pruebas unitarias
 - Realizar pruebas unitarias a los componetes del front con JEST y Enzyme
@@ -94,16 +113,16 @@ La aplicación constará de dos interfaces y un modal
 
 ## Trabajo futuro
 Como trabajo futuro en se podría implementar:
-- barra de búesqueda de anuncios
+- Barra de búsqueda de anuncios
 - Diseño responsive para el móvil o crear una PWA
-- Utilizar Mongo Compass persistencia en la nube en lugar de una persistencia local.
-- CRUD que permita gestionar los anuncios.
-- Autenticación para los usuarios a través de tokens de acceso (JWT) e implementar google SingIn
+- Gestión de los anuncios.
+- Gestion de usuaros
 - Protección de las rutas
 - Implementar Https
-- Gestión del perfil de usuario
 - Sistema de logs para la app
-- Dokerizar el proyecto.
+- Despliegue total en la nube
+- Terminar desplegar kafka 
+- Sistema de seguimiento  para los anuncios y alerta mediante push.
 
 
 
