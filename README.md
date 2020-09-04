@@ -78,7 +78,15 @@ La aplicación constará de dos interfaces y un modal
 - Implementar autentificación a la api con JWT
 
 ## Boceto del stack
-![boceto](https://github.com/ams113/Prueba-Anuncios-MERN/blob/master/anuncio.PNG?raw=true)
+
+
+![interfaces](https://github.com/ams113/Prueba-Anuncios-MERN/blob/master/interfaces.PNG?raw=true)
+
+![register](https://github.com/ams113/Prueba-Anuncios-MERN/blob/master/register.PNG?raw=true)
+
+![login](https://github.com/ams113/Prueba-Anuncios-MERN/blob/master/login.PNG?raw=true)
+
+![anuncio](https://github.com/ams113/Prueba-Anuncios-MERN/blob/master/anuncio.PNG?raw=true)
 
 ## Pruebas unitarias
 - Realizar pruebas unitarias a los componetes del front con JEST y Enzyme
